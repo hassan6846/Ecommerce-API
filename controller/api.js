@@ -1,12 +1,10 @@
-const api=async(req,res)=>{
-    res.status(200).json({
-        msg:"API KEY VALUE PAIR WOuld apear here"
-    })
+const express=require('express')
+const getData= async(req,res)=>{
+    
+res.status(200)
+res.json({
+    msg:"i am json data"
+})
+
 }
-// function 2
-const apiTesting=async(req,res)=>{
-    res.status(200).json({
-        msg:`API KEY VALUE PAIR WOuld apear  here`
-    })
-}
-module.exports={api,apiTesting}
+module.exports=getData;
